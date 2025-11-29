@@ -12,7 +12,7 @@ from openai import OpenAI
 load_dotenv()
 
 # Expect the OpenAI key to be in the environment variable `OPENAI_API_KEY`.
-api_key = os.getenv('OPENAI_API_KEY')
+api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise RuntimeError(
         "OpenAI API key not found. Please add `OPENAI_API_KEY` to a .env file or set the environment variable."
